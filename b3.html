@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BDS05 - Bất Động Sản</title>
+    <!-- Link Font Awesome cho các icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="b3.css" />
+  </head>
+  <body>
+    <!-- THANH CHUYỂN BÀI TẬP -->
+    <div class="exercise-nav">
+      <a href="b1.html" class="btn-ex">Bài tập 1</a>
+      <a href="b2.html" class="btn-ex">Bài tập 2</a>
+      <a href="b3.html" class="btn-ex">Bài tập 3</a>
+    </div>
+    <!-- HEADER / NAVBAR -->
+    <header class="header">
+      <div class="container header-container">
+        <div class="logo">
+          <span class="logo-icon"
+            ><i class="fa-solid fa-house-chimney"></i
+          ></span>
+          <span class="logo-text">BDS<span class="highlight">05</span></span>
+        </div>
+        <nav class="navbar">
+          <ul>
+            <li><a href="#" class="active">TRANG CHỦ</a></li>
+            <li><a href="#">GIỚI THIỆU</a></li>
+            <li>
+              <a href="#">DỰ ÁN <i class="fa-solid fa-chevron-down"></i></a>
+            </li>
+            <li><a href="#">CĂN HỘ</a></li>
+            <li><a href="#">MẶT BẰNG</a></li>
+            <li><a href="#">TIN TỨC</a></li>
+            <li><a href="#">LIÊN HỆ</a></li>
+          </ul>
+        </nav>
+        <div class="header-right">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <a href="#" class="btn btn-primary">Liên hệ ngay</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO BANNER SLIDER -->
+    <section class="hero-slider">
+      <div class="slides-container">
+        <!-- 10 Ảnh thực tế lấy từ Unsplash -->
+        <div class="slide active">
+          <img
+            src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2000&auto=format&fit=crop"
+            alt="Slide 1"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://images.unsplash.com/photo-1473268686121-081e7498c8c6?q=80&w=2000&auto=format&fit=crop"
+            alt="Slide 2"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2000&auto=format&fit=crop"
+            alt="Slide 3"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=2000&auto=format&fit=crop"
+            alt="Slide 4"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2000&auto=format&fit=crop"
+            alt="Slide 5"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2000&auto=format&fit=crop"
+            alt="Slide 6"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=2000&auto=format&fit=crop"
+            alt="Slide 7"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=2000&auto=format&fit=crop"
+            alt="Slide 8"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://images.unsplash.com/photo-1502672260266-1c1c2b1ea187?q=80&w=2000&auto=format&fit=crop"
+            alt="Slide 9"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://images.unsplash.com/photo-1448630360428-65456885c650?q=80&w=2000&auto=format&fit=crop"
+            alt="Slide 10"
+          />
+        </div>
+      </div>
+
+      <!-- Nút điều hướng 2 bên -->
+      <button class="nav-btn prev-btn">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <button class="nav-btn next-btn">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </section>
+
+    <!-- THANH TÌM KIẾM -->
+    <section class="search-section">
+      <div class="container">
+        <div class="search-grid">
+          <div class="form-group">
+            <label>Chọn tỉnh/thành phố</label>
+            <select>
+              <option>Chọn tỉnh/thành phố</option>
+              <option>Hà Nội</option>
+              <option>TP. Hồ Chí Minh</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Chọn quận/huyện</label>
+            <select>
+              <option>Chọn quận/huyện</option>
+              <option>Quận 1</option>
+              <option>Quận 7</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Chọn loại bất động sản</label>
+            <select>
+              <option>Loại bất động sản</option>
+              <option>Căn hộ</option>
+              <option>Nhà phố</option>
+            </select>
+          </div>
+          <div class="form-group form-group-btn">
+            <button class="btn btn-search">
+              <i class="fa-solid fa-magnifying-glass"></i> TÌM KIẾM NHANH
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DỰ ÁN NỔI BẬT -->
+    <section class="featured-projects">
+      <div class="container">
+        <div class="section-heading">
+          <div class="heading-icon">//</div>
+          <h2>DỰ ÁN NỔI BẬT</h2>
+          <p>
+            Tổng hợp các dự án bất động sản tại Hà Nội, Đà Nẵng, TP Hồ Chí
+            Minh...và các tỉnh thành khác hot nhất thời điểm hiện tại
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Card 1 -->
+          <div class="project-card">
+            <div class="card-img-wrap">
+              <span class="badge badge-new">Mới đăng</span>
+              <span class="badge badge-ribbon badge-vip">VIP</span>
+              <img
+                src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=800&auto=format&fit=crop"
+                alt="Căn hộ Quận 7"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Quận 7 – Căn hộ cao cấp nhìn ra sôn...</h3>
+              <p class="subtitle">Điểm nổi bật của Q7 Saigon Riverside:</p>
+              <p class="desc">
+                1/ Dự án là khu phức hợp căn hộ tốt nhất Việ...
+              </p>
+              <ul class="details-list">
+                <li>
+                  <i class="fa-solid fa-location-dot"></i> Đường Đào Trí P.Phú
+                  Thuận Q.7
+                </li>
+                <li><i class="fa-solid fa-building"></i> Loại BĐS: Căn hộ</li>
+                <li><i class="fa-solid fa-expand"></i> Diện tích: ~ 80m2</li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <span class="price">999 Triệu</span>
+              <a href="#" class="btn btn-sm">Xem chi tiết</a>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="project-card">
+            <div class="card-img-wrap">
+              <span class="badge badge-new">Mới đăng</span>
+              <span class="badge badge-ribbon badge-vip">VIP</span>
+              <img
+                src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800&auto=format&fit=crop"
+                alt="Căn hộ Quận 7"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Quận 7 – Căn hộ cao cấp nhìn ra sôn...</h3>
+              <p class="subtitle">Điểm nổi bật của Q7 Saigon Riverside:</p>
+              <p class="desc">
+                1/ Dự án là khu phức hợp căn hộ tốt nhất Việ...
+              </p>
+              <ul class="details-list">
+                <li>
+                  <i class="fa-solid fa-location-dot"></i> Đường Đào Trí P.Phú
+                  Thuận Q.7
+                </li>
+                <li><i class="fa-solid fa-building"></i> Loại BĐS: Căn hộ</li>
+                <li><i class="fa-solid fa-expand"></i> Diện tích: ~ 80m2</li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <span class="price">1,7 Tỷ</span>
+              <a href="#" class="btn btn-sm">Xem chi tiết</a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="project-card">
+            <div class="card-img-wrap">
+              <span class="badge badge-new">Mới đăng</span>
+              <span class="badge badge-ribbon badge-hot">HOT</span>
+              <img
+                src="https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=800&auto=format&fit=crop"
+                alt="Căn hộ Quận 7"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Quận 7 – Căn hộ cao cấp nhìn ra sôn...</h3>
+              <p class="subtitle">Điểm nổi bật của Q7 Saigon Riverside:</p>
+              <p class="desc">
+                1/ Dự án là khu phức hợp căn hộ tốt nhất Việ...
+              </p>
+              <ul class="details-list">
+                <li>
+                  <i class="fa-solid fa-location-dot"></i> Đường Đào Trí P.Phú
+                  Thuận Q.7
+                </li>
+                <li><i class="fa-solid fa-building"></i> Loại BĐS: Căn hộ</li>
+                <li><i class="fa-solid fa-expand"></i> Diện tích: ~ 80m2</li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <span class="price">1,7 Tỷ</span>
+              <a href="#" class="btn btn-sm">Xem chi tiết</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chấm tròn pagination -->
+        <div class="pagination-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- VÌ SAO BẠN CHỌN BDS05? -->
+    <section class="why-choose-us">
+      <div class="container">
+        <div class="section-heading text-white">
+          <h2>Vì sao bạn chọn BDS05?</h2>
+          <p>
+            Chúng tôi cung cấp đầy đủ và chính xác nhất thông tin các dự án bất
+            động sản trên toàn quốc song hành với dịch vụ tư vấn nhanh chóng và
+            hiệu quả
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-box">
+            <div class="icon"><i class="fa-solid fa-gear"></i></div>
+            <div class="info">
+              <h4>Chất lượng tốt nhất</h4>
+              <p>
+                Nghiên cứu, thiết kế và đầu tư xây dựng với hệ thống dịch vụ với
+                chất lượng tốt nhất
+              </p>
+            </div>
+          </div>
+          <div class="feature-box">
+            <div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div class="info">
+              <h4>Tìm kiếm thông tin dễ dàng</h4>
+              <p>Tìm kiếm bất động sản bạn muốn theo danh mục cực kì dễ dàng</p>
+            </div>
+          </div>
+          <div class="feature-box">
+            <div class="icon"><i class="fa-solid fa-users-line"></i></div>
+            <div class="info">
+              <h4>Kết nối với nhà đầu tư</h4>
+              <p>
+                Nhà đầu tư sẽ mang đến những sản phẩm và dịch vụ tốt nhất đáp
+                ứng nhu cầu của bạn
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Đặt trước thẻ đóng </body> -->
+    <script>
+      const slides = document.querySelectorAll(".slide");
+      const prevBtn = document.querySelector(".prev-btn");
+      const nextBtn = document.querySelector(".next-btn");
+      let currentIndex = 0;
+      let slideInterval;
+
+      function showSlide(index) {
+        // Xóa class active của tất cả các ảnh
+        slides.forEach((slide) => slide.classList.remove("active"));
+
+        // Xử lý vòng lặp (nếu tới ảnh cuối thì quay về ảnh đầu)
+        if (index >= slides.length) currentIndex = 0;
+        if (index < 0) currentIndex = slides.length - 1;
+
+        // Hiển thị ảnh hiện tại
+        slides[currentIndex].classList.add("active");
+      }
+
+      function nextSlide() {
+        currentIndex++;
+        showSlide(currentIndex);
+      }
+
+      // Sự kiện click nút bấm
+      nextBtn.addEventListener("click", () => {
+        nextSlide();
+        resetInterval(); // Bấm tay thì reset lại thời gian tự động chạy
+      });
+
+      prevBtn.addEventListener("click", () => {
+        currentIndex--;
+        showSlide(currentIndex);
+        resetInterval();
+      });
+
+      // Tự động chuyển ảnh sau mỗi 4 giây
+      function startInterval() {
+        slideInterval = setInterval(nextSlide, 4000);
+      }
+
+      function resetInterval() {
+        clearInterval(slideInterval);
+        startInterval();
+      }
+
+      // Khởi động slider
+      startInterval();
+    </script>
+  </body>
+</html>

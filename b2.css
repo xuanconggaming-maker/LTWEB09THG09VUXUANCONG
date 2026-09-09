@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  background-color: #ffffff;
+}
+
+/* 1. TOP BAR */
+.top-bar {
+  background-color: #1a1a1a;
+  color: #aaaaaa;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 50px;
+}
+.top-bar span {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+/* 2. NAVBAR (MENU) */
+.navbar {
+  position: absolute;
+  top: 34px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), transparent);
+  z-index: 10;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.nav-links li a:hover {
+  color: #7ed321;
+}
+
+/* 3. HERO SLIDER SECTION */
+.hero-slider {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+  background-color: #2b3a2f;
+}
+
+.slides-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.8s ease-in-out,
+    visibility 0.8s;
+}
+
+.slide.active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 1;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 2;
+  width: 100%;
+}
+
+.hero-content h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 70px;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 16px;
+  letter-spacing: 3px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 15px 0;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.nav-btn:hover {
+  background-color: #7ed321;
+}
+
+.prev-btn {
+  left: 30px;
+}
+
+.next-btn {
+  right: 30px;
+}
+
+/* 4. ABOUT SECTION (Phần Giới Thiệu) */
+.about {
+  padding: 80px 20px;
+  text-align: center;
+}
+.section-title {
+  font-family: "Dancing Script", cursive;
+  font-size: 50px;
+  margin-bottom: 60px;
+  color: #111;
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 30px;
+}
+.about-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.feature-item {
+  text-align: center;
+  padding: 0 20px;
+}
+.feature-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 20px;
+  filter: invert(50%) sepia(80%) saturate(400%) hue-rotate(50deg);
+}
+.feature-item h3 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.feature-item p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.8;
+}
+.about-center {
+  flex: 1.2;
+  display: flex;
+  justify-content: center;
+}
+.center-img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* 5. BOTTOM BANNER (Banner cuối trang) */
+.bottom-banner {
+  background-image: url("https://images.unsplash.com/photo-1538356111053-748a48e1acb8?q=80&w=1920&auto=format&fit=crop");
+  background-color: #0d2b17;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 40px;
+}
+.banner-content {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 80px 20px;
+  text-align: center;
+  color: white;
+}
+.banner-content h4 {
+  color: #7ed321;
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.banner-content h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+.banner-content p {
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+/* =========================================
+   THANH CHUYỂN BÀI TẬP (NÚT NỔI GÓC DƯỚI PHẢI)
+========================================= */
+.exercise-nav {
+  position: fixed; /* Cố định vị trí khi cuộn trang */
+  bottom: 30px; /* Cách cạnh dưới màn hình 30px */
+  right: 30px; /* Cách cạnh phải màn hình 30px */
+  display: flex;
+  flex-direction: column; /* Xếp các nút dọc từ trên xuống */
+  gap: 12px; /* Khoảng cách giữa các nút */
+  z-index: 9999; /* Đảm bảo luôn nổi trên tất cả các thành phần khác */
+}
+
+.btn-ex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 20px;
+  background-color: #3498db;
+  color: #ffffff !important;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 50px; /* Bo tròn hai đầu dạng viên thuốc */
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Tạo bóng đổ 3D */
+}
+
+.btn-ex:hover {
+  background-color: #2980b9;
+  transform: scale(1.05) translateY(-2px); /* Hiệu ứng phình to và nảy lên nhẹ */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Hiệu ứng cho trang đang được chọn */
+.btn-ex.active {
+  background-color: #e74c3c; /* Màu đỏ nổi bật */
+  box-shadow: 0 4px 10px rgba(231, 76, 60, 0.3);
+}
